@@ -450,21 +450,6 @@
         bounds_group.addLayer(layer__3);
         map.addLayer(layer__3);
         setBounds();
-        <script>
-        const params = new URLSearchParams(window.location.search);
-    const lat = parseFloat(params.get('lat'));
-    const lng = parseFloat(params.get('lng'));
-
-  if (!isNaN(lat) && !isNaN(lng)) {
-        const currentLocationIcon = L.icon({
-            iconUrl: 'resources/location.png',
-            iconSize: [30, 45],
-            iconAnchor: [15, 45]
-        });
-
-        map.setView([lat, lng], 20);
-        L.marker([lat, lng], { icon: currentLocationIcon }).addTo(map);
-    }   
         </script>
     </body>
 </html>
